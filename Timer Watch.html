@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Timer</title>
+  <link rel="stylesheet" href="Timer Watch.css" />
+</head>
+<body class="light-theme">
+  <div class="container">
+  <div id="timeUpMessage" class="finisher"></div>
+    <div class="timer-circle">
+      <div class="progress-bar"></div>
+      <span id="timer">00:00</span>
+    </div>
+
+    <div class="inputs">
+      <input type="number" id="minutesInput" placeholder="Minutes" min="0">
+      <input type="number" id="secondsInput" placeholder="Seconds" min="0" max="59">
+    </div>
+
+    <div class="buttons">
+      <button id="startBtn">▶️ Start</button>
+      <button id="stopBtn">⏸️ Stop</button>
+      <button id="resetBtn">🔄 Reset</button>
+      <button id="lapBtn">⏺️ Lap</button>
+    </div>
+
+    <div class="laps">
+      <h3>Lap Times </h3>
+      <ul id="lapTimes"></ul>
+    </div>
+
+    <button id="themeToggle">🌙 Dark Theme</button>
+  </div>
+
+  <script src="Timer Watch.js"></script>
+</body>
+</html>
